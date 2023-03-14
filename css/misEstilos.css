@@ -1,0 +1,85 @@
+.item1 { grid-area: header; }
+.item7 { grid-area: encabezado;}
+.item8 { grid-area: nivelDeCalidad;}
+.item9 { grid-area: agregarParticipantes;}
+.item2 { grid-area: bloque; }
+.item3 { grid-area: actividades; }
+.item4 { grid-area: participantes; }
+.item5 { grid-area: bloquesPredefinidos; }
+.item6 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'nivelDeCalidad nivelDeCalidad nivelDeCalidad agregarParticipantes agregarParticipantes agregarParticipantes'
+    'bloque encabezado encabezado encabezado encabezado bloquesPredefinidos'
+    'bloque actividades actividades actividades actividades bloquesPredefinidos'
+    'footer footer footer footer footer footer';
+  gap: 0.5%;
+  grid-template-columns: 6% auto auto auto auto 7%;
+  grid-template-rows: auto auto 7.5em auto auto auto auto;
+  padding: 0px;
+}
+
+.grid-container > div {
+  background-color: rgba(194, 210, 214, 0.486);
+  text-align: center;
+  padding: 0px;
+  font-size: 30px;
+}
+
+.iconoArrastrable{
+  width: 55px;
+  padding: 20px 0px 20px 0px;
+  display: block;
+  margin: auto ;
+  
+}
+
+iframe{
+  width: 100%;
+  height: auto;
+}
+
+#documentacion{
+  display: none;
+  height: 23em;
+}
+
+#materiales{
+  display: none;
+  height: 4em;
+}
+
+#inspeccion{
+  display: none;
+  height: 11em;
+}
+
+#iFinal{
+  display: none;
+  height: 4em;
+}
+
+#revQA{
+  display: none;
+  height: 5em;
+}
+
+.titulos{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nivelDeCalidad{
+  font-family:sans-serif;
+  font-size: 3vh;
+  font-weight: 700;
+  padding: 0% 2% 0% 2%;
+}
+
+.encabezadoPlan{
+  width: 100%;
+  margin-top: 0%;
+}

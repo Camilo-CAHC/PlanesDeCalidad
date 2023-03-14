@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/misEstilos.css"> 
+
+</head>
+
+<body>
+    <div class="grid-container">
+        
+        
+        <div class="item1 ">
+          <img src="/imagenes/header.png" alt="Encabezdo" style="width: 100%;">
+        </div>
+        
+        <div class="item8">
+          <span class="nivelDeCalidad">
+            <label for="calidadA">Nivel de calidad <b>A</b></label>
+            <input type="checkbox" id="calidadA" name="calidadA" value="Nivel de calidad A" onclick="nivelesDeCalidad()">
+          </span>
+          <span class="nivelDeCalidad">
+            <label for="calidadA">Nivel de calidad <b>B</b></label>
+            <input type="checkbox" id="calidadB" name="calidadB" value="Nivel de calidad B" onclick="nivelesDeCalidad()">
+          </span>
+          <span class="nivelDeCalidad">
+            <label for="calidadA">Nivel de calidad <b>C</b> </label>
+            <input type="checkbox" id="calidadC" name="calidadC" value="Nivel de calidad C" onclick="nivelesDeCalidad()">
+          </span>
+        </div>
+
+        <div class="item9">Participantes
+          <input type="Participante 1" class="mostrar1">
+        </div>
+
+        <div class="item7">
+          <img src="/imagenes/encabezado.png" alt="EncabezdoPlan" class="encabezadoPlan">
+        </div>
+
+        <div id="cajaDeposito" class="item2"><p class="titulos">Actividades realizar</p></div>
+        <div class="item3">
+            <iframe id="documentacion" src="documentación.html"></iframe>
+            <iframe id="materiales" src="recepcionDeMateriales.html"></iframe>
+            <iframe id="inspeccion" src="inspeccionesYTestDeSoldadura.html"></iframe>
+            <iframe id="iFinal" src="inspeccionFinal.html"></iframe>
+            <iframe id="revQA" src="revisiónQA.html"></iframe>
+          
+        </div>
+        <!--<div class="item4"> <p class="titulos">Participantes</p></div> -->
+        <div id="bloquePredefinido" class="item5"><p class="titulos">Actividades predefinidas</p>
+          <img id="cdd" class="iconoArrastrable" src="./imagenes/checklist.png" alt="Control de documentación" title="Control de documentación">
+          <img id="rdm" class="iconoArrastrable" src="./imagenes/stock.png" alt="Recepción de materiales" title="Recepción de materiales">
+          <img id="iyeds" class="iconoArrastrable" src="./imagenes/weldingMask.png" alt="Inspección y ensayos de soldadura" title="Inspección y ensayos de soldadura">
+          <img id="if" class="iconoArrastrable" src="./imagenes/inspection.png" alt="Inspección final" title="Inspección final">
+          <img id="rfQA" class="iconoArrastrable" src="./imagenes/research.png" alt="Revisión final de QA" title="Revisión final de QA">
+        </div>
+        
+        
+        <div class="item6">Pie de página</div>
+        
+    </div>
+
+    <script src="/JS/javascript.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="/JS/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+
+</html>
